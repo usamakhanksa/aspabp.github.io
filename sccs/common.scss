@@ -1,0 +1,151 @@
+@import 'variables';
+
+
+.btn {
+    cursor: pointer;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    color: white;
+    background-color: var(--green-dark);
+    border: none;
+    user-select: none;
+
+    &:active {
+        background-color: var(--green-light);
+    }
+}
+
+.btn__large, button.btn__large {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    width: 20rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.switch {
+    font-size: .5rem;
+    height: 2em;
+    width: 4em;
+    border-radius: 1em;
+    background-color:var(--green-dark);
+    position: relative;
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 3;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 1.6em;
+        margin: .2em;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 2;
+        transition: left, right 0.3s ease-in-out;
+
+    }
+
+    &.switch-on {
+        &::after {
+            left: unset;
+            right: 0;
+        }
+    }
+}
+
+.progress__bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    --bar-width: 500px;
+    overflow: hidden;
+
+    &.single__step {
+        justify-content: flex-end;
+    }
+
+    .progress__bar-inner {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 3px;
+        background-color: var(--grey-10);
+    }
+
+    .progress__step {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --active-progress-bar-right-position: 0;
+
+        .circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            background-color: var(--grey-10);
+
+            svg {
+                width: 1rem;
+                height: 1rem;
+                color: #000;
+            }
+        }
+
+        .bar {
+            display: none;
+            position: absolute;
+            z-index: -1;
+            width: 368px;
+            height: 3px;
+            background-color: var(--green-dark);
+
+            right: var(--active-progress-bar-right-position);
+        }
+
+        &.active {
+            .circle {
+                background-color: var(--green-dark);
+            }
+
+            .bar {
+                display: block;
+            }
+        }
+
+        &.progress_step-1 {
+            --active-progress-bar-right-position: 0;
+        }
+
+        &.progress_step-1 {
+            --active-progress-bar-right-position: 180;
+        }
+
+        &.progress_step-1 {
+            --active-progress-bar-right-position: 368;
+        }
+    }
+
+    .progress__step-1 {}
+}

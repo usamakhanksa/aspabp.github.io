@@ -1,0 +1,50 @@
+:root {
+  --border: rgb(204, 204, 204) 1px solid;
+  --green-dark: #188754;
+  --green-light: #A6D0A8;
+  --blue-light: #CAF1F8;
+  --red-dark: #DD3245;
+  --red-light: #e05061;
+  --red-light-10: #e0818d;
+  --grey-10: #727378;
+  --grey-6: #d5d9db;
+  --grey-5: #E6EBEE;
+  --grey-1: #F1F5F6;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family: var(--bs-font-sans-serif);
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100Vw;
+  min-height: 100vh;
+}
+body .main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
+body .main > * + * {
+  margin-top: 2rem;
+}
+body .main h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons > * + * {
+  margin-top: 2rem;
+}/*# sourceMappingURL=index.css.map */

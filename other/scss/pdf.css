@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.main__box {
+  width: 100%;
+  border-radius: 2rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+.main__box > * + * {
+  margin-top: 1rem;
+}
+.main__box .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+.main__box .subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: beige;
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+}
+.header__info .middle__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header__info .left__info,
+.header__info .right__info,
+.header__info .middle__info {
+  width: 33%;
+}
+.header__info .left__info .value,
+.header__info .right__info .value,
+.header__info .middle__info .value {
+  font-size: 1.2rem;
+}
+.header__info .qr img {
+  width: 200px;
+  height: 200px;
+}
+
+.left__info,
+.right__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+.left__info > * + *,
+.right__info > * + * {
+  margin-top: 0.5rem;
+}
+.left__info .info__item,
+.right__info .info__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.left__info .info__item .key,
+.right__info .info__item .key {
+  font-weight: 400;
+}
+.left__info .value,
+.right__info .value {
+  font-weight: 600;
+}
+.left__info .value.halfbox,
+.right__info .value.halfbox {
+  border: 1px solid rgb(243, 219, 202);
+  background-color: beige;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.left__info {
+  align-items: flex-start;
+}
+.left__info .value.halfbox {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.right__info {
+  align-items: flex-end;
+  text-align: right;
+}
+.right__info .value {
+  text-align: right;
+}
+.right__info .value.halfbox {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.body__info, .buyer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border: 1.5px solid black;
+  width: 100%;
+  height: auto;
+}
+.body__info > * + *, .buyer__info > * + * {
+  margin-top: 0.5rem;
+}
+.body__info .body__item, .buyer__info .body__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.body__info .body__item .value, .buyer__info .body__item .value {
+  width: 100%;
+  font-size: 1rem;
+}
+.body__info .body__item.horizontal__body__items, .buyer__info .body__item.horizontal__body__items {
+  justify-content: space-between;
+}
+.body__info .body__item.horizontal__body__item, .buyer__info .body__item.horizontal__body__item {
+  width: calc(100% - 0.5rem);
+}
+.body__info .body__item.horizontal__body__item .left__info, .buyer__info .body__item.horizontal__body__item .left__info {
+  text-align: left;
+}
+.body__info .body__item.horizontal__body__item .left__info .value, .buyer__info .body__item.horizontal__body__item .left__info .value {
+  text-align: left;
+}
+.body__info .body__item.horizontal__body__item .left__info .value.halfbox, .buyer__info .body__item.horizontal__body__item .left__info .value.halfbox {
+  border-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.body__info .body__item.horizontal__body__item .right__info .value.halfbox, .buyer__info .body__item.horizontal__body__item .right__info .value.halfbox {
+  border-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.buyer__info {
+  margin-top: 1rem;
+}/*# sourceMappingURL=pdf.css.map */

@@ -1,0 +1,18 @@
+1. generate invoice hash
+2. generate digital signature
+3. generate certificate hash
+4. populate the signed propertied output
+5. generate signed properties hash
+6. populate the ubl extensions output
+7. Generate QR & Populate Encoded QR
+
+1. generate invoice hash
+
+    1. create the invoice file without (ublextension, qr, signature)
+    2. canonicalize the xml
+    3. hash the new invoice body sha-256
+    4. encode the hashed invoice (base64)
+
+2. generate digital signature
+
+    1. generate private key from csr config file

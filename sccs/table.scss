@@ -1,0 +1,89 @@
+.table {
+    margin-top: 1rem;
+    height: 70vh;
+    max-height: 70vh;
+    overflow: auto;
+    width: 100%;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+            th {
+                padding-inline: .5rem;
+                padding-block: .5rem;
+                vertical-align: bottom;
+                position: sticky;
+                top: 0;
+                background-color: white;
+
+                .th__content {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    .text {
+                        margin-right: .2rem;
+                        text-align: left;
+                    }
+
+                    .sort__icon {
+                        padding-bottom: .5rem;
+                        cursor: pointer;
+
+                        .sort__up,
+                        .sort__down,
+                        .sort__both {
+                            height: .7rem;
+                            color: var(--grey-6);
+
+                            &.active {
+                                color: var(--grey-10);
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        tbody {
+            td {
+                vertical-align: top;
+                padding-inline: .5rem;
+                padding-block: .5rem;
+                border-top: var(--border);
+
+                .btn {
+                    border-radius: .2rem;
+                }
+            }
+
+            tr:nth-child(odd) {
+                background-color: var(--grey-5);
+
+
+            }
+
+        }
+
+
+
+
+    }
+
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        width: 5px;
+        background-color: var(--grey-10);
+    }
+}

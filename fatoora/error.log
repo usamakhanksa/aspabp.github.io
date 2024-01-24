@@ -1,0 +1,43 @@
+*   Trying 185.117.128.50:443...
+* Connected to gw-fatoora.zatca.gov.sa (185.117.128.50) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*  CAfile: C:\laragon\etc\ssl\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=SA; ST=Riyadh Province; L=Riyadh; O=Zakat, Tax and Customs Authority; CN=*.zatca.gov.sa
+*  start date: Apr 16 10:01:03 2023 GMT
+*  expire date: May 17 10:01:02 2024 GMT
+*  issuer: C=BE; O=GlobalSign nv-sa; CN=GlobalSign RSA OV SSL CA 2018
+*  SSL certificate verify ok.
+> POST /e-invoicing/developer-portal/compliance HTTP/1.1
+Host: gw-fatoora.zatca.gov.sa
+Accept: */*
+Accept-Language: en
+Accept-Version: V2
+Content-Type: application/json
+OTP: 123345
+Content-Length: 1126
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Connection: Keep-Alive
+< Date: Wed, 24 Jan 2024 08:17:05 GMT
+< Content-Type: application/json
+< Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 1; mode=block
+< Cache-Control: no-store, max-age=0
+< Pragma: no-cache
+< Expires: 0
+< Strict-Transport-Security: max-age=15724800; includeSubDomains
+< X-Frame-Options: DENY
+< Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'none'; form-action 'self'
+< X-Global-Transaction-ID: ae5a90e165b0c76999216961
+< Set-Cookie: TS0106293e=0132a679c08a42f98adde6078d99480a087080faf1bb2901b2dd9fe456374b2540a7d67fff9ba09fef1ae240cd203410119ae7abc3; Path=/; Domain=.gw-fatoora.zatca.gov.sa
+< Transfer-Encoding: chunked
+< 
+* Connection #0 to host gw-fatoora.zatca.gov.sa left intact

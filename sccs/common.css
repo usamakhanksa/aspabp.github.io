@@ -1,0 +1,143 @@
+:root {
+  --border: rgb(204, 204, 204) 1px solid;
+  --green-dark: #188754;
+  --green-light: #A6D0A8;
+  --blue-light: #CAF1F8;
+  --red-dark: #DD3245;
+  --red-light: #e05061;
+  --red-light-10: #e0818d;
+  --grey-10: #727378;
+  --grey-6: #d5d9db;
+  --grey-5: #E6EBEE;
+  --grey-1: #F1F5F6;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family: var(--bs-font-sans-serif);
+}
+
+.btn {
+  cursor: pointer;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  color: white;
+  background-color: var(--green-dark);
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.btn:active {
+  background-color: var(--green-light);
+}
+
+.btn__large, button.btn__large {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  width: 20rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.switch {
+  font-size: 0.5rem;
+  height: 2em;
+  width: 4em;
+  border-radius: 1em;
+  background-color: var(--green-dark);
+  position: relative;
+}
+.switch input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 3;
+}
+.switch::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1.6em;
+  margin: 0.2em;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 2;
+  transition: left, right 0.3s ease-in-out;
+}
+.switch.switch-on::after {
+  left: unset;
+  right: 0;
+}
+
+.progress__bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  --bar-width: 500px;
+  overflow: hidden;
+}
+.progress__bar.single__step {
+  justify-content: flex-end;
+}
+.progress__bar .progress__bar-inner {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  background-color: var(--grey-10);
+}
+.progress__bar .progress__step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --active-progress-bar-right-position: 0;
+}
+.progress__bar .progress__step .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--grey-10);
+}
+.progress__bar .progress__step .circle svg {
+  width: 1rem;
+  height: 1rem;
+  color: #000;
+}
+.progress__bar .progress__step .bar {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  width: 368px;
+  height: 3px;
+  background-color: var(--green-dark);
+  right: var(--active-progress-bar-right-position);
+}
+.progress__bar .progress__step.active .circle {
+  background-color: var(--green-dark);
+}
+.progress__bar .progress__step.active .bar {
+  display: block;
+}
+.progress__bar .progress__step.progress_step-1 {
+  --active-progress-bar-right-position: 0;
+}
+.progress__bar .progress__step.progress_step-1 {
+  --active-progress-bar-right-position: 180;
+}
+.progress__bar .progress__step.progress_step-1 {
+  --active-progress-bar-right-position: 368;
+}/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,67 @@
+.table {
+  margin-top: 1rem;
+  height: 70vh;
+  max-height: 70vh;
+  overflow: auto;
+  width: 100%;
+}
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table table thead th {
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  vertical-align: bottom;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.table table thead th .th__content {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.table table thead th .th__content .text {
+  margin-right: 0.2rem;
+  text-align: left;
+}
+.table table thead th .th__content .sort__icon {
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+.table table thead th .th__content .sort__icon .sort__up,
+.table table thead th .th__content .sort__icon .sort__down,
+.table table thead th .th__content .sort__icon .sort__both {
+  height: 0.7rem;
+  color: var(--grey-6);
+}
+.table table thead th .th__content .sort__icon .sort__up.active,
+.table table thead th .th__content .sort__icon .sort__down.active,
+.table table thead th .th__content .sort__icon .sort__both.active {
+  color: var(--grey-10);
+  display: block;
+}
+.table table tbody td {
+  vertical-align: top;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-top: var(--border);
+}
+.table table tbody td .btn {
+  border-radius: 0.2rem;
+}
+.table table tbody tr:nth-child(odd) {
+  background-color: var(--grey-5);
+}
+.table::-webkit-scrollbar {
+  width: 7px;
+}
+.table::-webkit-scrollbar-track {
+  display: none;
+}
+.table::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: var(--grey-10);
+}/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,17 @@
+{
+    "require": {
+        "ramsey/uuid": "^4.7",
+        "chillerlan/php-qrcode": "^4.3",
+        "saleh7/php-zatca-xml": "^1.0",
+        "phpseclib/phpseclib": "^3.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "monolog/monolog": "^3.5",
+        "abdelrahmanbl/fatoora-zatca": "^2.3",
+        "bacon/bacon-qr-code": "^2.0",
+        "cboden/ratchet": "^0.4.4",
+        "tecnickcom/tcpdf": "^6.6",
+        "vlucas/phpdotenv": "^5.6",
+        "dompdf/dompdf": "^2.0",
+        "mpdf/mpdf": "^8.2"
+    }
+}

@@ -1,0 +1,40 @@
+@import 'variables';
+
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100Vw;
+    min-height: 100vh;
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-block: 2rem;
+        width: 100vw;
+        height: 100vh;
+
+        >* + * {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    >* + * {
+        margin-top: 2rem;
+    }   
+}

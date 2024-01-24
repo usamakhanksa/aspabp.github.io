@@ -1,0 +1,674 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+      p {
+        margin: 0pt;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .td {
+        vertical-align: top;
+      }
+      .td-border {
+      }
+      .border-table {
+        border: 0.5px solid #000000;
+        border-radius: 2rem;
+        padding: 0.5rem;
+      }
+      .header-info tbody tr td {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .value {
+        margin-top: 0.3rem;
+        padding: 0.3rem;
+        background-color: rgb(236, 235, 233);
+        border: 0.5px solid #fff1e2;
+      }
+      table.table thead tr th {
+        padding: 1rem;
+      }
+      table.table tbody tr td {
+        padding: 1rem;
+      }
+      table.table-grid tbody tr td {
+        border: .2px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border-table">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td
+              style="font-size: 2rem; padding: 1rem"
+              align="center"
+              width="100%"
+            >
+              Tax Invoice فاتورة ضريبية
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="border-table"
+        style="border: none; background-color: rgb(236, 235, 233)"
+      >
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td
+                style="font-size: 1.5rem; padding: 1rem"
+                align="left"
+                width="33%"
+              >
+                <table class="header-info">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>Invoice Reference Number (IRN)</div>
+                        <div>123456</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>Issue Date</div>
+                        <div>2022-09-07</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>Supply Date</div>
+                        <div>2022-09-08</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td
+                style="font-size: 1.5rem; padding: 1rem"
+                align="center"
+                width="33%"
+              >
+                <img src="qrcode.png" alt="" width="150px" height="150px" />
+              </td>
+              <td
+                style="font-size: 1.5rem; padding: 1rem"
+                align="right"
+                width="33%"
+              >
+                <table class="header-info" style="direction: rtl">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>الرقم التسلسلي</div>
+                        <div>123456</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>تاريخ اصدار الفاتورة</div>
+                        <div>2022-09-07</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>تاريخ التوريد</div>
+                        <div>2022-09-08</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="border-table" style="margin-top: 1rem">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td
+                align="left"
+                colspan="2"
+                style="padding: 1rem; font-size: 1.5rem; width: 50%"
+              >
+                Seller Identification
+              </td>
+              <td
+                align="right"
+                colspan="2"
+                style="padding: 1rem; font-size: 1.5rem; width: 50%"
+              >
+                هوية المورد
+              </td>
+            </tr>
+            <tr>
+              <td
+                align="left"
+                colspan="2"
+                style="padding: 0.5rem; padding-right: 0"
+              >
+                <div>Seler Name</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">Maximum Speed Tech Supply LTD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td
+                align="right"
+                colspan="2"
+                style="padding: 0.5rem; padding-left: 0"
+              >
+                <div>اسم المورد</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">Maximum Speed Tech Supply LTD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>VAT Registration</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">399999999900003</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>تسجيل ضريبة القيمة المضافة</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">399999999900003</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>Addition SellerID Type</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">(CR)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>نوع المعرفات الإضافية للمورد</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">السجل التجاري</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td
+                align="left"
+                colspan="2"
+                style="padding: 0.5rem; font-size: 1.5rem"
+              >
+                Address
+              </td>
+              <td
+                align="right"
+                colspan="2"
+                style="padding: 0.5rem; font-size: 1.5rem"
+              >
+                لعنوان
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>Street Name</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">Prince Sultan</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>اسم الشارع</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">الامير سلطان</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>Building Number</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">2322</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>رقم المبنى</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">2322</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>City</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">Riyadh</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>اسم المدينة</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">الرياض</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>District</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">Al-Murabba</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>اسم الحي</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">المربع</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="padding: 0.5rem; padding-right: 0">
+                <div>Country Code</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">SA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="right" style="padding: 0.5rem; padding-left: 0">
+                <div>رمز الدولة</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="value">SA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="border-table" style="margin-top: 1rem">
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td
+                  align="left"
+                  colspan="2"
+                  style="padding: 1rem; font-size: 1.5rem; width: 50%"
+                >
+                  Buyer Identification
+                </td>
+                <td
+                  align="right"
+                  colspan="2"
+                  style="padding: 1rem; font-size: 1.5rem; width: 50%"
+                >
+                  هوية المورد
+                </td>
+              </tr>
+              <tr>
+                <td
+                  align="left"
+                  colspan="2"
+                  style="padding: 0.5rem; padding-right: 0"
+                >
+                  <div>Seler Name</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">Maximum Speed Tech Supply LTD</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td
+                  align="right"
+                  colspan="2"
+                  style="padding: 0.5rem; padding-left: 0"
+                >
+                  <div>اسم المورد</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">Maximum Speed Tech Supply LTD</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>VAT Registration</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">399999999900003</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>تسجيل ضريبة القيمة المضافة</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">399999999900003</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>Addition SellerID Type</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">(CR)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>نوع المعرفات الإضافية للمورد</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">السجل التجاري</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  align="left"
+                  colspan="2"
+                  style="padding: 0.5rem; font-size: 1.5rem"
+                >
+                  Address
+                </td>
+                <td
+                  align="right"
+                  colspan="2"
+                  style="padding: 0.5rem; font-size: 1.5rem"
+                >
+                  لعنوان
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>Street Name</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">Prince Sultan</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>اسم الشارع</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">الامير سلطان</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>Building Number</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">2322</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>رقم المبنى</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">2322</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>City</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">Riyadh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>اسم المدينة</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">الرياض</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>District</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">Al-Murabba</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>اسم الحي</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">المربع</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding: 0.5rem; padding-right: 0">
+                  <div>Country Code</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">SA</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="padding: 0.5rem; padding-left: 0">
+                  <div>رمز الدولة</div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="value">SA</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="border-table" style="margin-top: 4rem">
+          <div style="border: 0.5px solid #000000; border-radius: 1rem">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    <div>Product Description</div>
+                  </th>
+                  <th>
+                    <div>Unit Price</div>
+                  </th>
+                  <th>
+                    <div>Quantity</div>
+                  </th>
+                  <th><div>VAT Rate</div></th>
+                  <th><div>VAT Amount</div></th>
+                  <th><div>Subtotal Exclusive of VAT</div></th>
+                  <th><div>Subtotal Inclusive of VAT</div></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border: 0.5px solid #000000">
+                  <td align="center">
+                    <div>حاسوب محمول</div>
+                    <div>Laptop</div>
+                  </td>
+                  <td align="center">1000 SAR</td>
+                  <td align="center">2</td>
+                  <td align="center">15%</td>
+                  <td align="center">300 SAR</td>
+                  <td align="center">2000 SAR</td>
+                  <td align="center">2300 SAR</td>
+                </tr>
+                <tr style="border: 0.5px solid #000000">
+                  <td align="center">
+                    <div>حاسوب محمول</div>
+                    <div>Laptop</div>
+                  </td>
+                  <td align="center">1000 SAR</td>
+                  <td align="center">2</td>
+                  <td align="center">15%</td>
+                  <td align="center">300 SAR</td>
+                  <td align="center">2000 SAR</td>
+                  <td align="center">2300 SAR</td>
+                </tr>
+                <tr style="">
+                  <td align="center">
+                    <div>حاسوب محمول</div>
+                    <div>Laptop</div>
+                  </td>
+                  <td align="center">1000 SAR</td>
+                  <td align="center">2</td>
+                  <td align="center">15%</td>
+                  <td align="center">300 SAR</td>
+                  <td align="center">2000 SAR</td>
+                  <td align="center">2300 SAR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="border: 0.5px solid #000000; border-radius: 1rem; margin-top: 1rem; width: 75%;">
+            <table class="table table-grid">
+              <tbody>
+                <tr>
+                  <td>
+                    <div>خصم على مستوى الفاتورة</div>
+                    <div>Discount at Document Level</div>
+                  </td>
+                  <td>100 SAR</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      المبلغ الخاضع للضريبة (غير شامل ضريبة القيمة المضافة)
+                    </div>
+                    <div>Invoie Taxable Amount</div>
+                  </td>
+                  <td>1900 SAR</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>اجمالى مبلغ ضريبة القيمة المضافة</div>
+                    <div>VAT Total Amount</div>
+                  </td>
+                  <td>285 SAR</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>إجمالي قيمة الفاتورة (شامل ضريبة القيمة المضافة)</div>
+                    <div>Invoice Gross Total (Inclusive of VAT)</div>
+                  </td>
+                  <td>2185 SAR</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>إجمالي مبلغ الفاتورة المستحق الدفع</div>
+                    <div>Invoice Total Payable Amount</div>
+                  </td>
+                  <td>2185 SAR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
